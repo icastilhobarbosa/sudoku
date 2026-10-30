@@ -6,6 +6,9 @@
 <meta name="theme-color" content="#1D5A45">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sudoku">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <title>Sudoku — The Daily Puzzle Edition</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231D5A45'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23F59AC3'/%3E%3C/svg%3E">
 <style>
@@ -812,5 +815,6 @@ if(params.has('skip')){DB.onb=1;go('home','none');if(EMB)demoLater(1200)}else pl
 window.__sdk={get G(){return G},get sel(){return sel},set sel(v){sel=v;draw()},place,DB,go};
 })();
 </script>
+<script>if('serviceWorker' in navigator&&isSecureContext)addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}))</script>
 </body>
 </html>
